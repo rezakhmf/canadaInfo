@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		D63456C02452ED9D00ACB5B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63456BE2452ED9D00ACB5B2 /* Main.storyboard */; };
 		D63456C22452ED9F00ACB5B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63456C12452ED9F00ACB5B2 /* Assets.xcassets */; };
 		D63456C52452ED9F00ACB5B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63456C32452ED9F00ACB5B2 /* LaunchScreen.storyboard */; };
+		D63456CE2452F0A100ACB5B2 /* CanadaInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63456CD2452F0A100ACB5B2 /* CanadaInfoModel.swift */; };
+		D63456D12452F15800ACB5B2 /* CanadaInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63456D02452F15800ACB5B2 /* CanadaInfoProvider.swift */; };
+		D63456D42452F9E200ACB5B2 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63456D32452F9E200ACB5B2 /* NetworkError.swift */; };
+		D63456D62452FB0800ACB5B2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63456D52452FB0800ACB5B2 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		D63456C12452ED9F00ACB5B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D63456C42452ED9F00ACB5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D63456C62452ED9F00ACB5B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D63456CD2452F0A100ACB5B2 /* CanadaInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaInfoModel.swift; sourceTree = "<group>"; };
+		D63456D02452F15800ACB5B2 /* CanadaInfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaInfoProvider.swift; sourceTree = "<group>"; };
+		D63456D32452F9E200ACB5B2 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D63456D52452FB0800ACB5B2 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +64,6 @@
 				04D3F2A6C0D5879190AAACF0 /* Pods-CanadaInfo.debug.xcconfig */,
 				2EF5BC1502F599D62F4F830B /* Pods-CanadaInfo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +88,7 @@
 		D63456B72452ED9D00ACB5B2 /* CanadaInfo */ = {
 			isa = PBXGroup;
 			children = (
+				D63456CC2452F03D00ACB5B2 /* Model */,
 				D63456B82452ED9D00ACB5B2 /* AppDelegate.swift */,
 				D63456BA2452ED9D00ACB5B2 /* SceneDelegate.swift */,
 				D63456BC2452ED9D00ACB5B2 /* ViewController.swift */,
@@ -90,6 +98,33 @@
 				D63456C62452ED9F00ACB5B2 /* Info.plist */,
 			);
 			path = CanadaInfo;
+			sourceTree = "<group>";
+		};
+		D63456CC2452F03D00ACB5B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D63456CF2452F12500ACB5B2 /* Repository */,
+				D63456CD2452F0A100ACB5B2 /* CanadaInfoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D63456CF2452F12500ACB5B2 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				D63456D22452F9C300ACB5B2 /* Configuration */,
+				D63456D02452F15800ACB5B2 /* CanadaInfoProvider.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		D63456D22452F9C300ACB5B2 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D63456D32452F9E200ACB5B2 /* NetworkError.swift */,
+				D63456D52452FB0800ACB5B2 /* Environment.swift */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63456D12452F15800ACB5B2 /* CanadaInfoProvider.swift in Sources */,
 				D63456BD2452ED9D00ACB5B2 /* ViewController.swift in Sources */,
+				D63456D62452FB0800ACB5B2 /* Environment.swift in Sources */,
+				D63456CE2452F0A100ACB5B2 /* CanadaInfoModel.swift in Sources */,
+				D63456D42452F9E200ACB5B2 /* NetworkError.swift in Sources */,
 				D63456B92452ED9D00ACB5B2 /* AppDelegate.swift in Sources */,
 				D63456BB2452ED9D00ACB5B2 /* SceneDelegate.swift in Sources */,
 			);
@@ -355,7 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4X93Y726LZ;
+				DEVELOPMENT_TEAM = W4HVNQTX75;
 				INFOPLIST_FILE = CanadaInfo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -374,7 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4X93Y726LZ;
+				DEVELOPMENT_TEAM = W4HVNQTX75;
 				INFOPLIST_FILE = CanadaInfo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

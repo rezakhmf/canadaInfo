@@ -18,6 +18,7 @@
 		D63456D12452F15800ACB5B2 /* CanadaInfoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63456D02452F15800ACB5B2 /* CanadaInfoProvider.swift */; };
 		D63456D42452F9E200ACB5B2 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63456D32452F9E200ACB5B2 /* NetworkError.swift */; };
 		D63456D62452FB0800ACB5B2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63456D52452FB0800ACB5B2 /* Environment.swift */; };
+		D690B771245573FE00F078D6 /* CanadaInfoViewModelProivder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D690B770245573FE00F078D6 /* CanadaInfoViewModelProivder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D63456D02452F15800ACB5B2 /* CanadaInfoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaInfoProvider.swift; sourceTree = "<group>"; };
 		D63456D32452F9E200ACB5B2 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		D63456D52452FB0800ACB5B2 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		D690B770245573FE00F078D6 /* CanadaInfoViewModelProivder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaInfoViewModelProivder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				D63456CC2452F03D00ACB5B2 /* Model */,
+				D690B7722455740400F078D6 /* ViewModel */,
 				D63456B82452ED9D00ACB5B2 /* AppDelegate.swift */,
 				D63456BA2452ED9D00ACB5B2 /* SceneDelegate.swift */,
 				D63456BC2452ED9D00ACB5B2 /* ViewController.swift */,
@@ -125,6 +128,14 @@
 				D63456D52452FB0800ACB5B2 /* Environment.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		D690B7722455740400F078D6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D690B770245573FE00F078D6 /* CanadaInfoViewModelProivder.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +257,7 @@
 				D63456BD2452ED9D00ACB5B2 /* ViewController.swift in Sources */,
 				D63456D62452FB0800ACB5B2 /* Environment.swift in Sources */,
 				D63456CE2452F0A100ACB5B2 /* CanadaInfoModel.swift in Sources */,
+				D690B771245573FE00F078D6 /* CanadaInfoViewModelProivder.swift in Sources */,
 				D63456D42452F9E200ACB5B2 /* NetworkError.swift in Sources */,
 				D63456B92452ED9D00ACB5B2 /* AppDelegate.swift in Sources */,
 				D63456BB2452ED9D00ACB5B2 /* SceneDelegate.swift in Sources */,

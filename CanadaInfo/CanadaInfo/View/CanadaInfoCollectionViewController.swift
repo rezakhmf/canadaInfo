@@ -80,24 +80,17 @@ class CanadaInfoCollectionViewController: UICollectionViewController, UICollecti
         self.canadaInfoHeader = self.self.canadaInfo?.title
         let canadaInfo = self.canadaInfo?.rows?[indexPath.row]
         
-        //MARK: - layzy image download and update the image and draw the layout
-        if let imageUrl = canadaInfo?.imageHref, let url = URL(string: imageUrl) {
-            cell.elementImageView.af.setImage(withURL: url, cacheKey: nil, placeholderImage: nil, serializer: nil, filter: nil, progress: nil, progressQueue: .main, imageTransition: .noTransition, runImageTransitionIfCached: true) { response in
-                cell.setNeedsLayout()
-            }
-        }
         
-        //MARK: - load canada info with lazy image download
-        cell.configure(title: canadaInfo?.title, description: canadaInfo?.description)
+        //MARK: - load canada info into cell
+        cell.configure(title: canadaInfo?.title, description: canadaInfo?.description, imageUrl: canadaInfo?.imageHref)
         
         return cell
         
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let sectionInset = (collectionViewLayout as! UICollectionViewFlowLayout).sectionInset
-        let referenceHeight: CGFloat = 150 // Approximate height of your cell
-        let referenceWidth = collectionView.safeAreaLayoutGuide.layoutFrame.width - sectionInset.left - sectionInset.right - collectionView.contentInset.left - collectionView.contentInset.right
+        let referenceHeight: CGFloat = 100 // Approximate height of your cell
+        let referenceWidth = collectionView.safeAreaLayoutGuide.layoutFrame.width
         return CGSize(width: referenceWidth, height: referenceHeight)
     }
     

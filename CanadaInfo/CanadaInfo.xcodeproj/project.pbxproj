@@ -23,6 +23,7 @@
 		D690B77D24557B2900F078D6 /* View+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D690B77C24557B2900F078D6 /* View+Constraint.swift */; };
 		D690B77F245582B300F078D6 /* Color+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = D690B77E245582B300F078D6 /* Color+Random.swift */; };
 		D690B7812455961F00F078D6 /* SerializationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D690B7802455961F00F078D6 /* SerializationError.swift */; };
+		D69696C92455D54F00F91AE8 /* UIInt64+MegayByte.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69696C82455D54F00F91AE8 /* UIInt64+MegayByte.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		D690B77C24557B2900F078D6 /* View+Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Constraint.swift"; sourceTree = "<group>"; };
 		D690B77E245582B300F078D6 /* Color+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Random.swift"; sourceTree = "<group>"; };
 		D690B7802455961F00F078D6 /* SerializationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializationError.swift; sourceTree = "<group>"; };
+		D69696C82455D54F00F91AE8 /* UIInt64+MegayByte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIInt64+MegayByte.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			children = (
 				D690B77C24557B2900F078D6 /* View+Constraint.swift */,
 				D690B77E245582B300F078D6 /* Color+Random.swift */,
+				D69696C82455D54F00F91AE8 /* UIInt64+MegayByte.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				D63456D12452F15800ACB5B2 /* CanadaInfoProvider.swift in Sources */,
 				D63456D62452FB0800ACB5B2 /* Environment.swift in Sources */,
 				D63456CE2452F0A100ACB5B2 /* CanadaInfoModel.swift in Sources */,
+				D69696C92455D54F00F91AE8 /* UIInt64+MegayByte.swift in Sources */,
 				D690B7792455795D00F078D6 /* CanadaInfoCell.swift in Sources */,
 				D690B775245578D500F078D6 /* CanadaInfoCollectionViewController.swift in Sources */,
 				D690B771245573FE00F078D6 /* CanadaInfoViewModelProivder.swift in Sources */,

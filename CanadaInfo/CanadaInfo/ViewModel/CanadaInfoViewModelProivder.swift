@@ -7,9 +7,12 @@
 //
 
 import Foundation
+import Alamofire
+import Alamofire
 
 protocol CanadaInfoViewModelProvier: class {
     func getCanadaInfo(completion: @escaping (CanadaInfoModel) -> Void)
+    func retrieveImage(for url: String, completion: @escaping (UIImage) -> Void) -> Request
 }
 
 public class CanadaInfoViewModel: CanadaInfoViewModelProvier {
@@ -32,5 +35,16 @@ public class CanadaInfoViewModel: CanadaInfoViewModelProvier {
                 completion(canadaInfoModel)
             }
         }
+    }
+    
+    func retrieveImage(for url: String, completion: @escaping (UIImage) -> Void) -> Request {
+        return AF.request(url, method: .get).responseImage { response in
+                   switch response.result {
+                   case .failure(let error) :
+                       print(error)
+                   case .success(let image):
+                       completion(image)
+                   }
+               }
     }
 }

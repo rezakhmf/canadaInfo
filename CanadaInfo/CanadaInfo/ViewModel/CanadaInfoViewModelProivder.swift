@@ -9,7 +9,7 @@
 import Foundation
 
 protocol CanadaInfoViewModelProvier: class {
-    func getCanadaInfo(completion: @escaping CompletionHandler)
+    func getCanadaInfo(completion: @escaping (CanadaInfoModel) -> Void)
 }
 
 public class CanadaInfoViewModel: CanadaInfoViewModelProvier {
@@ -21,15 +21,15 @@ public class CanadaInfoViewModel: CanadaInfoViewModelProvier {
         self.canadaInfoRepository = canadaInfoRepository
     }
     
-    func getCanadaInfo(completion: @escaping CompletionHandler) {
+    func getCanadaInfo(completion: @escaping (CanadaInfoModel) -> Void) {
         
         canadaInfoRepository.getCanadaInfo { response in
            
             switch response {
             case .failure(let error):
-                completion(.failure(error))
-            case .success(let canadaModel):
-                completion(.success(canadaModel))
+                print(error.description)
+            case .success(let canadaInfoModel):
+                completion(canadaInfoModel)
             }
         }
     }

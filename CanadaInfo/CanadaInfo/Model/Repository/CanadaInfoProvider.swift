@@ -47,9 +47,24 @@ public class CanadaInfoRepository: CanadaInfoProvider {
                     }
                     
                     do {
-                        let canadaInfo = try JSONDecoder().decode(CanadaInfoModel.self, from: data)
-                        completion(.success(canadaInfo))
+                        
+                        //MARK: - convet data to string in UTF8
+                        let candanInfoModelJsonString = String(decoding: data, as: UTF8.self)
+                        //MARK: - convet data to data in UTF8
+                        let candanInfoModelJsonData:Data = candanInfoModelJsonString.data(using: .utf8)!
+                        //MARK: - convet data to Dictionary
+                        if let candanInfoModelJsonObject = try JSONSerialization.jsonObject(with: candanInfoModelJsonData, options: .allowFragments) as? [String: Any] {
+                            
+                            //MARK: - parse to model
+                            let canandaInfoModel = try CanadaInfoModel(json: candanInfoModelJsonObject)
+                            
+                            completion(.success(canandaInfoModel))
+                            
+                        } else {
+                            completion(.failure(SerializationError.missing("the data format is wrong") as NSError))
+                        }
                     } catch {
+                        print(error.localizedDescription)
                         completion(.failure(error as NSError))
                     }
                 }

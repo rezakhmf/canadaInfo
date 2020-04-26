@@ -7,4 +7,5 @@ target 'CanadaInfo' do
 
   # Pods for CanadaInfo
   pod 'Alamofire', '5.1.0'
+  pod 'AlamofireImage', '4.1'
 end

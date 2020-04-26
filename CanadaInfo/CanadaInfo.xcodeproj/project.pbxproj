@@ -10,8 +10,6 @@
 		442D6D4932C15D781D703E05 /* Pods_CanadaInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0161268E6466E90E53898A5D /* Pods_CanadaInfo.framework */; };
 		D63456B92452ED9D00ACB5B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63456B82452ED9D00ACB5B2 /* AppDelegate.swift */; };
 		D63456BB2452ED9D00ACB5B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63456BA2452ED9D00ACB5B2 /* SceneDelegate.swift */; };
-		D63456BD2452ED9D00ACB5B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63456BC2452ED9D00ACB5B2 /* ViewController.swift */; };
-		D63456C02452ED9D00ACB5B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63456BE2452ED9D00ACB5B2 /* Main.storyboard */; };
 		D63456C22452ED9F00ACB5B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63456C12452ED9F00ACB5B2 /* Assets.xcassets */; };
 		D63456C52452ED9F00ACB5B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D63456C32452ED9F00ACB5B2 /* LaunchScreen.storyboard */; };
 		D63456CE2452F0A100ACB5B2 /* CanadaInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63456CD2452F0A100ACB5B2 /* CanadaInfoModel.swift */; };
@@ -19,6 +17,12 @@
 		D63456D42452F9E200ACB5B2 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63456D32452F9E200ACB5B2 /* NetworkError.swift */; };
 		D63456D62452FB0800ACB5B2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63456D52452FB0800ACB5B2 /* Environment.swift */; };
 		D690B771245573FE00F078D6 /* CanadaInfoViewModelProivder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D690B770245573FE00F078D6 /* CanadaInfoViewModelProivder.swift */; };
+		D690B775245578D500F078D6 /* CanadaInfoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D690B774245578D500F078D6 /* CanadaInfoCollectionViewController.swift */; };
+		D690B7772455793400F078D6 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D690B7762455793400F078D6 /* BaseCell.swift */; };
+		D690B7792455795D00F078D6 /* CanadaInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D690B7782455795D00F078D6 /* CanadaInfoCell.swift */; };
+		D690B77D24557B2900F078D6 /* View+Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D690B77C24557B2900F078D6 /* View+Constraint.swift */; };
+		D690B77F245582B300F078D6 /* Color+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = D690B77E245582B300F078D6 /* Color+Random.swift */; };
+		D690B7812455961F00F078D6 /* SerializationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D690B7802455961F00F078D6 /* SerializationError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +32,6 @@
 		D63456B52452ED9D00ACB5B2 /* CanadaInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanadaInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63456B82452ED9D00ACB5B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D63456BA2452ED9D00ACB5B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D63456BC2452ED9D00ACB5B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D63456BF2452ED9D00ACB5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D63456C12452ED9F00ACB5B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D63456C42452ED9F00ACB5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D63456C62452ED9F00ACB5B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,6 +40,12 @@
 		D63456D32452F9E200ACB5B2 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		D63456D52452FB0800ACB5B2 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		D690B770245573FE00F078D6 /* CanadaInfoViewModelProivder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaInfoViewModelProivder.swift; sourceTree = "<group>"; };
+		D690B774245578D500F078D6 /* CanadaInfoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaInfoCollectionViewController.swift; sourceTree = "<group>"; };
+		D690B7762455793400F078D6 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		D690B7782455795D00F078D6 /* CanadaInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaInfoCell.swift; sourceTree = "<group>"; };
+		D690B77C24557B2900F078D6 /* View+Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Constraint.swift"; sourceTree = "<group>"; };
+		D690B77E245582B300F078D6 /* Color+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Random.swift"; sourceTree = "<group>"; };
+		D690B7802455961F00F078D6 /* SerializationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializationError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +100,9 @@
 			children = (
 				D63456CC2452F03D00ACB5B2 /* Model */,
 				D690B7722455740400F078D6 /* ViewModel */,
+				D690B773245578C000F078D6 /* View */,
 				D63456B82452ED9D00ACB5B2 /* AppDelegate.swift */,
 				D63456BA2452ED9D00ACB5B2 /* SceneDelegate.swift */,
-				D63456BC2452ED9D00ACB5B2 /* ViewController.swift */,
-				D63456BE2452ED9D00ACB5B2 /* Main.storyboard */,
 				D63456C12452ED9F00ACB5B2 /* Assets.xcassets */,
 				D63456C32452ED9F00ACB5B2 /* LaunchScreen.storyboard */,
 				D63456C62452ED9F00ACB5B2 /* Info.plist */,
@@ -126,6 +133,7 @@
 			children = (
 				D63456D32452F9E200ACB5B2 /* NetworkError.swift */,
 				D63456D52452FB0800ACB5B2 /* Environment.swift */,
+				D690B7802455961F00F078D6 /* SerializationError.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -136,6 +144,34 @@
 				D690B770245573FE00F078D6 /* CanadaInfoViewModelProivder.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D690B773245578C000F078D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D690B77A24557AFD00F078D6 /* Utils */,
+				D690B774245578D500F078D6 /* CanadaInfoCollectionViewController.swift */,
+				D690B7762455793400F078D6 /* BaseCell.swift */,
+				D690B7782455795D00F078D6 /* CanadaInfoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D690B77A24557AFD00F078D6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D690B77B24557B0A00F078D6 /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D690B77B24557B0A00F078D6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D690B77C24557B2900F078D6 /* View+Constraint.swift */,
+				D690B77E245582B300F078D6 /* Color+Random.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +236,6 @@
 			files = (
 				D63456C52452ED9F00ACB5B2 /* LaunchScreen.storyboard in Resources */,
 				D63456C22452ED9F00ACB5B2 /* Assets.xcassets in Resources */,
-				D63456C02452ED9D00ACB5B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,27 +289,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				D63456D12452F15800ACB5B2 /* CanadaInfoProvider.swift in Sources */,
-				D63456BD2452ED9D00ACB5B2 /* ViewController.swift in Sources */,
 				D63456D62452FB0800ACB5B2 /* Environment.swift in Sources */,
 				D63456CE2452F0A100ACB5B2 /* CanadaInfoModel.swift in Sources */,
+				D690B7792455795D00F078D6 /* CanadaInfoCell.swift in Sources */,
+				D690B775245578D500F078D6 /* CanadaInfoCollectionViewController.swift in Sources */,
 				D690B771245573FE00F078D6 /* CanadaInfoViewModelProivder.swift in Sources */,
 				D63456D42452F9E200ACB5B2 /* NetworkError.swift in Sources */,
 				D63456B92452ED9D00ACB5B2 /* AppDelegate.swift in Sources */,
+				D690B7772455793400F078D6 /* BaseCell.swift in Sources */,
+				D690B77F245582B300F078D6 /* Color+Random.swift in Sources */,
+				D690B7812455961F00F078D6 /* SerializationError.swift in Sources */,
 				D63456BB2452ED9D00ACB5B2 /* SceneDelegate.swift in Sources */,
+				D690B77D24557B2900F078D6 /* View+Constraint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D63456BE2452ED9D00ACB5B2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D63456BF2452ED9D00ACB5B2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D63456C32452ED9F00ACB5B2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
